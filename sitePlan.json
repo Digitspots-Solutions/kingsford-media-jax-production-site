@@ -1,0 +1,63 @@
+{
+  "businessName": "Kingsford Media & Jax Production",
+  "industry": "Fashion and Creative Design",
+  "tone": "creative, stylish, professional",
+  "tagline": "Where Fashion Meets Creative Excellence",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "Transform Your Vision Into Reality\n\nWelcome to Kingsford Media & Jax Production, Lagos's premier destination for fashion and creative design excellence. We bring your boldest ideas to life with cutting-edge creativity and impeccable craftsmanship.",
+      "imagePrompt": "High-end fashion photoshoot in a modern Lagos creative studio, beautiful Nigerian models wearing vibrant contemporary African fashion designs, professional lighting equipment visible, stylish industrial backdrop with warm golden hour lighting streaming through large windows, ultra-realistic, commercial photography quality",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "Your Creative Partners in Fashion Excellence\n\nAt Kingsford Media & Jax Production, we are a dynamic creative studio based in the heart of Ifako Ijaiye, Lagos. We specialize in delivering exceptional fashion design and creative production services that elevate brands and bring artistic visions to life.\n\nOur team combines technical expertise with artistic innovation to produce stunning fashion collections, creative campaigns, and design solutions tailored to the unique needs of our clients. From concept development to final execution, we handle every detail with precision and passion.\n\nWhether you're an emerging fashion brand, an established business looking to refresh your image, or an individual seeking bespoke creative services, we have the skills and experience to exceed your expectations.",
+      "imagePrompt": "Modern creative studio workspace in Lagos, diverse team of Nigerian fashion designers and creatives collaborating around a large table with fabric swatches, sketches, and mood boards, bright natural lighting, colorful African prints visible, professional yet warm atmosphere, photorealistic detail",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Services",
+      "copy": "Comprehensive Fashion & Creative Solutions\n\nFashion Design & Production\nCustom clothing design and manufacturing, from concept sketches to finished garments. We create unique pieces that reflect your personal style or brand identity, using premium fabrics and expert tailoring.\n\nCreative Direction & Styling\nProfessional styling services for photoshoots, fashion shows, music videos, and brand campaigns. Our creative directors ensure every visual element tells your story perfectly.\n\nBrand Development & Identity\nComplete brand design services including logo creation, visual identity systems, and brand guidelines. We help fashion businesses establish a strong, memorable presence in the market.\n\nFashion Photography & Videography\nHigh-quality production services for lookbooks, campaigns, and promotional content. Our team captures your designs in the most compelling way possible.\n\nEvent Production\nFull-service production for fashion shows, product launches, and creative events. From concept to execution, we manage every detail to create unforgettable experiences.\n\nCustom Garment Manufacturing\nSmall to medium batch production of custom clothing lines. We work with businesses and individuals to bring clothing collections to market with professional quality and attention to detail.",
+      "imagePrompt": "Grid collage showing various fashion and creative services: fashion designer measuring fabric on a dress form, professional camera setup for fashion photography, models on a Lagos runway, creative team reviewing designs on tablets, vibrant Nigerian fabrics and patterns throughout, modern and colorful, editorial quality photography",
+      "layout": "grid"
+    },
+    {
+      "id": "portfolio",
+      "name": "Our Work",
+      "copy": "A Showcase of Creative Excellence\n\nExplore our portfolio of fashion designs, creative campaigns, and production projects. Each piece represents our commitment to quality, innovation, and the celebration of African creativity. From contemporary streetwear to elegant traditional-meets-modern designs, our work speaks to the diversity and vibrancy of Nigerian fashion.\n\nWe've partnered with emerging designers, established brands, musicians, and individual clients to create stunning visual content and wearable art that makes an impact.",
+      "imagePrompt": "Professional fashion portfolio spread showing diverse Nigerian fashion designs including contemporary Ankara pieces, modern streetwear, elegant evening wear, creative photoshoot setups, models in various settings around Lagos landmarks, vibrant colors and patterns, magazine-quality photography, high-end fashion editorial style",
+      "layout": "grid"
+    },
+    {
+      "id": "process",
+      "name": "How We Work",
+      "copy": "Your Journey From Concept to Creation\n\n1. Consultation & Discovery\nWe begin with an in-depth conversation to understand your vision, needs, and objectives. Whether it's a fashion collection, a creative campaign, or a custom design project, we take time to grasp every detail.\n\n2. Concept Development\nOur creative team develops initial concepts, mood boards, and design proposals tailored to your brief. We present multiple directions and refine based on your feedback.\n\n3. Design & Production\nOnce the concept is approved, we move into full production mode. Our skilled designers and craftspeople bring the vision to life with meticulous attention to quality and detail.\n\n4. Review & Refinement\nWe present the work for your review and make any necessary adjustments. Your satisfaction is our priority, and we ensure every element meets your standards.\n\n5. Final Delivery\nYour completed project is delivered on time and ready to make an impact. We provide ongoing support and are always available for future collaborations.",
+      "imagePrompt": "Clean infographic-style visualization showing the creative process flow, Nigerian fashion designers at work in various stages: consulting with clients, sketching designs, selecting fabrics, sewing and crafting, photography sessions, modern Lagos studio environment, bright and professional atmosphere, documentary photography style",
+      "layout": "cards"
+    },
+    {
+      "id": "testimonials",
+      "name": "Client Testimonials",
+      "copy": "What Our Clients Say\n\n\"Working with Kingsford Media & Jax Production transformed our brand completely. Their creative vision and attention to detail exceeded our expectations. They truly understand the Nigerian fashion landscape.\" - Adaeze O., Fashion Entrepreneur\n\n\"Professional, creative, and reliable. They brought our fashion show concept to life flawlessly. The team's dedication to excellence is evident in every project.\" - Tunde A., Event Organizer\n\n\"From the first consultation to final delivery, the experience was seamless. They created custom designs that perfectly captured my personal style while remaining uniquely Nigerian.\" - Blessing M., Private Client",
+      "imagePrompt": "Collage of happy Nigerian clients wearing custom fashion pieces, smiling faces of diverse age groups and styles, fashion show audience applauding, satisfied customers reviewing finished products, warm and authentic moments captured in Lagos settings, candid photography style, genuine emotions",
+      "layout": "cards"
+    },
+    {
+      "id": "contact",
+      "name": "Get In Touch",
+      "copy": "Let's Create Something Amazing Together\n\nReady to bring your fashion and creative vision to life? We're here to help. Whether you have a specific project in mind or just want to explore possibilities, reach out to us today.\n\nVisit our studio in Ifako Ijaiye or connect with us via phone or WhatsApp. We're excited to hear about your ideas and show you how Kingsford Media & Jax Production can elevate your creative projects.\n\nConsultations are available by appointment. Contact us now to schedule your session and take the first step toward exceptional fashion and creative excellence.",
+      "imagePrompt": "Welcoming modern creative studio reception area in Lagos, stylish furniture with African design elements, fashion sketches and fabric samples artfully displayed on walls, natural light streaming through windows, professional yet warm atmosphere, inviting space that reflects creativity and style, architectural photography quality",
+      "layout": "split"
+    }
+  ],
+  "contact": {
+    "phone": "08051569178",
+    "email": "info@kingsfordmedia.ng",
+    "address": "6, Obada Ekiti Close, Olaniyi Bus Stop, Abule Egba, Ifako Ijaiye, Lagos State, Nigeria",
+    "whatsapp": "https://wa.me/2348051569178"
+  }
+}
