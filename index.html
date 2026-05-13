@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingsford Media & Jax Production - Where Fashion Meets Creative Excellence</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap">
+    <style>
+        :root {
+            --color-primary: #111111;
+            --color-accent: #0151f9;
+            --color-bg: #F5F5F5;
+            --color-text: #080808;
+            --color-surface: #e7e7e7;
+            --color-secondary-accent: #f81e64;
+            --font-display: 'Oswald', sans-serif;
+            --font-body: 'Plus Jakarta Sans', sans-serif;
+            --border-radius: 0px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(245, 245, 245, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1.5rem 5%;
+            box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        nav .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+
+        nav .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav .nav-links a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        nav .nav-links a:hover {
+            color: var(--color-accent);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 3px;
+            background: var(--color-text);
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 70px;
+            right: -100%;
+            width: 300px;
+            height: calc(100vh - 70px);
+            background: var(--color-bg);
+            box-shadow: -4px 4px 0 rgba(0, 0, 0, 0.1);
+            transition: right 0.3s ease;
+            z-index: 999;
+            padding: 2rem;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+        }
+
+        .mobile-menu ul li {
+            margin-bottom: 1.5rem;
+        }
+
+        .mobile-menu ul a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 0.5rem 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .mobile-menu ul a:hover {
+            color: var(--color-accent);
+        }
+
+        #hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 80px 5%;
+            overflow: hidden;
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        #hero .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        #hero .hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #hero .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: 1;
+        }
+
+        #hero .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            color: #ffffff;
+            text-align: right;
+        }
+
+        #hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        #hero .cta-button {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: var(--color-accent);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 4px 4px 0 var(--color-secondary-accent);
+        }
+
+        #hero .cta-button:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 var(--color-secondary-accent);
+        }
+
+        section {
+            padding: 80px 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        #about {
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.1s;
+        }
+
+        #about .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        #about .about-image {
+            position: relative;
+        }
+
+        #about .about-image img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            box-shadow: 8px 8px 0 var(--color-accent);
+        }
+
+        #about .about-text h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        #about .about-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        #services {
+            background: var(--color-surface);
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.2s;
+        }
+
+        #services h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        #services .services-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            font-size: 1.1rem;
+        }
+
+        #services .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        #services .service-card {
+            background: var(--color-bg);
+            padding: 2rem;
+            box-shadow: 6px 6px 0 var(--color-primary);
+            transition: all 0.3s ease;
+        }
+
+        #services .service-card:hover {
+            transform: translate(3px, 3px);
+            box-shadow: 3px 3px 0 var(--color-primary);
+        }
+
+        #services .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-accent);
+            text-transform: uppercase;
+        }
+
+        #services .service-card p {
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        #portfolio {
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.3s;
+        }
+
+        #portfolio h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        #portfolio .portfolio-intro {
+            max-width: 900px;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        #portfolio .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        #portfolio .portfolio-item {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            box-shadow: 6px 6px 0 var(--color-secondary-accent);
+        }
+
+        #portfolio .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        #portfolio .portfolio-item:hover img {
+            transform: scale(1.05);
+        }
+
+        #process {
+            background: var(--color-surface);
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.4s;
+        }
+
+        #process h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        #process .process-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            font-size: 1.1rem;
+        }
+
+        #process .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        #process .process-step {
+            background: var(--color-bg);
+            padding: 2rem;
+            box-shadow: 6px 6px 0 var(--color-accent);
+        }
+
+        #process .process-step h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-secondary-accent);
+            text-transform: uppercase;
+        }
+
+        #process .process-step p {
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        #testimonials {
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.5s;
+        }
+
+        #testimonials h2 {
+            font-size: 3rem;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        #testimonials .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        #testimonials .testimonial-card {
+            background: var(--color-surface);
+            padding: 2rem;
+            border-left: 6px solid var(--color-accent);
+            position: relative;
+        }
+
+        #testimonials .testimonial-card p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        #testimonials .testimonial-card .author {
+            font-weight: 600;
+            color: var(--color-accent);
+            font-style: normal;
+        }
+
+        #contact {
+            background: var(--color-surface);
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.6s;
+        }
+
+        #contact .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        #contact .contact-image img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            box-shadow: 8px 8px 0 var(--color-secondary-accent);
+        }
+
+        #contact h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        #contact p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        #contact .contact-details {
+            margin-top: 2rem;
+        }
+
+        #contact .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        #contact .contact-item strong {
+            min-width: 100px;
+            font-weight: 600;
+            color: var(--color-accent);
+        }
+
+        #contact .contact-item a {
+            color: var(--color-text);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        #contact .contact-item a:hover {
+            color: var(--color-accent);
+        }
+
+        #contact .whatsapp-button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2.5rem;
+            background: #25D366;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 4px 4px 0 var(--color-primary);
+            transition: all 0.3s ease;
+        }
+
+        #contact .whatsapp-button:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 var(--color-primary);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 4px 4px 0 var(--color-primary);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float svg {
+            width: 32px;
+            height: 32px;
+            fill: #ffffff;
+        }
+
+        footer {
+            background: var(--color-primary);
+            color: #ffffff;
+            text-align: center;
+            padding: 2rem 5%;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 1024px) {
+            section {
+                padding: 60px 5%;
+            }
+
+            #hero h1 {
+                font-size: 3rem;
+            }
+
+            #about .about-container,
+            #contact .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            #about .about-text h2,
+            #contact h2,
+            #services h2,
+            #portfolio h2,
+            #process h2,
+            #testimonials h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            section {
+                padding: 48px 5%;
+            }
+
+            #hero {
+                padding: 48px 5%;
+                justify-content: center;
+            }
+
+            #hero .hero-content {
+                text-align: center;
+            }
+
+            #hero h1 {
+                font-size: 2.5rem;
+            }
+
+            #hero p {
+                font-size: 1rem;
+            }
+
+            #about .about-text h2,
+            #contact h2,
+            #services h2,
+            #portfolio h2,
+            #process h2,
+            #testimonials h2 {
+                font-size: 2rem;
+            }
+
+            #about .about-image img,
+            #contact .contact-image img {
+                height: 400px;
+            }
+
+            #services .services-grid,
+            #process .process-steps,
+            #testimonials .testimonials-grid,
+            #portfolio .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .whatsapp-float svg {
+                width: 26px;
+                height: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#hero" class="logo">KINGSFORD MEDIA</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <section id="hero">
+        <div class="hero-bg">
+            <img src="https://images.pexels.com/photos/33676561/pexels-photo-33676561.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Fashion Excellence">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Transform Your Vision Into Reality</h1>
+            <p>Welcome to Kingsford Media & Jax Production, Lagos's premier destination for fashion and creative design excellence. We bring your boldest ideas to life with cutting-edge creativity and impeccable craftsmanship.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://images.pexels.com/photos/7383647/pexels-photo-7383647.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="About Kingsford Media">
+            </div>
+            <div class="about-text">
+                <h2>Your Creative Partners in Fashion Excellence</h2>
+                <p>At Kingsford Media & Jax Production, we are a dynamic creative studio based in the heart of Ifako Ijaiye, Lagos. We specialize in delivering exceptional fashion design and creative production services that elevate brands and bring artistic visions to life.</p>
+                <p>Our team combines technical expertise with artistic innovation to produce stunning fashion collections, creative campaigns, and design solutions tailored to the unique needs of our clients. From concept development to final execution, we handle every detail with precision and passion.</p>
+                <p>Whether you're an emerging fashion brand, an established business looking to refresh your image, or an individual seeking bespoke creative services, we have the skills and experience to exceed your expectations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p class="services-intro">Comprehensive Fashion & Creative Solutions</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Fashion Design & Production</h3>
+                <p>Custom clothing design and manufacturing, from concept sketches to finished garments. We create unique pieces that reflect your personal style or brand identity, using premium fabrics and expert tailoring.</p>
+            </div>
+            <div class="service-card">
+                <h3>Creative Direction & Styling</h3>
+                <p>Professional styling services for photoshoots, fashion shows, music videos, and brand campaigns. Our creative directors ensure every visual element tells your story perfectly.</p>
+            </div>
+            <div class="service-card">
+                <h3>Brand Development & Identity</h3>
+                <p>Complete brand design services including logo creation, visual identity systems, and brand guidelines. We help fashion businesses establish a strong, memorable presence in the market.</p>
+            </div>
+            <div class="service-card">
+                <h3>Fashion Photography & Videography</h3>
+                <p>High-quality production services for lookbooks, campaigns, and promotional content. Our team captures your designs in the most compelling way possible.</p>
+            </div>
+            <div class="service-card">
+                <h3>Event Production</h3>
+                <p>Full-service production for fashion shows, product launches, and creative events. From concept to execution, we manage every detail to create unforgettable experiences.</p>
+            </div>
+            <div class="service-card">
+                <h3>Custom Garment Manufacturing</h3>
+                <p>Small to medium batch production of custom clothing lines. We work with businesses and individuals to bring clothing collections to market with professional quality and attention to detail.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Our Work</h2>
+        <p class="portfolio-intro">A Showcase of Creative Excellence</p>
+        <p class="portfolio-intro">Explore our portfolio of fashion designs, creative campaigns, and production projects. Each piece represents our commitment to quality, innovation, and the celebration of African creativity. From contemporary streetwear to elegant traditional-meets-modern designs, our work speaks to the diversity and vibrancy of Nigerian fashion.</p>
+        <p class="portfolio-intro">We've partnered with emerging designers, established brands, musicians, and individual clients to create stunning visual content and wearable art that makes an impact.</p>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://images.pexels.com/photos/9853298/pexels-photo-9853298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Portfolio Item">
+            </div>
+            <div class="portfolio-item">
+                <img src="https://images.pexels.com/photos/3816395/pexels-photo-3816395.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Portfolio Item">
+            </div>
+            <div class="portfolio-item">
+                <img src="https://images.pexels.com/photos/7947648/pexels-photo-7947648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Portfolio Item">
+            </div>
+        </div>
+    </section>
+
+    <section id="process">
+        <h2>How We Work</h2>
+        <p class="process-intro">Your Journey From Concept to Creation</p>
+        <div class="process-steps">
+            <div class="process-step">
+                <h3>1. Consultation & Discovery</h3>
+                <p>We begin with an in-depth conversation to understand your vision, needs, and objectives. Whether it's a fashion collection, a creative campaign, or a custom design project, we take time to grasp every detail.</p>
+            </div>
+            <div class="process-step">
+                <h3>2. Concept Development</h3>
+                <p>Our creative team develops initial concepts, mood boards, and design proposals tailored to your brief. We present multiple directions and refine based on your feedback.</p>
+            </div>
+            <div class="process-step">
+                <h3>3. Design & Production</h3>
+                <p>Once the concept is approved, we move into full production mode. Our skilled designers and craftspeople bring the vision to life with meticulous attention to quality and detail.</p>
+            </div>
+            <div class="process-step">
+                <h3>4. Review & Refinement</h3>
+                <p>We present the work for your review and make any necessary adjustments. Your satisfaction is our priority, and we ensure every element meets your standards.</p>
+            </div>
+            <div class="process-step">
+                <h3>5. Final Delivery</h3>
+                <p>Your completed project is delivered on time and ready to make an impact. We provide ongoing support and are always available for future collaborations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Client Testimonials</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p>"Working with Kingsford Media & Jax Production transformed our brand completely. Their creative vision and attention to detail exceeded our expectations. They truly understand the Nigerian fashion landscape."</p>
+                <p class="author">- Adaeze O., Fashion Entrepreneur</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Professional, creative, and reliable. They brought our fashion show concept to life flawlessly. The team's dedication to excellence is evident in every project."</p>
+                <p class="author">- Tunde A., Event Organizer</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"From the first consultation to final delivery, the experience was seamless. They created custom designs that perfectly captured my personal style while remaining uniquely Nigerian."</p>
+                <p class="author">- Blessing M., Private Client</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-image">
+                <img src="https://images.pexels.com/photos/19893586/pexels-photo-19893586.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Contact Us">
+            </div>
+            <div class="contact-text">
+                <h2>Let's Create Something Amazing Together</h2>
+                <p>Ready to bring your fashion and creative vision to life? We're here to help. Whether you have a specific project in mind or just want to explore possibilities, reach out to us today.</p>
+                <p>Visit our studio in Ifako Ijaiye or connect with us via phone or WhatsApp. We're excited to hear about your ideas and show you how Kingsford Media & Jax Production can elevate your creative projects.</p>
+                <p>Consultations are available by appointment. Contact us now to schedule your session and take the first step toward exceptional fashion and creative excellence.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <strong>Phone:</strong>
+                        <a href="tel:+2348051569178">08051569178</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:info@kingsfordmedia.ng">info@kingsfordmedia.ng</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Address:</strong>
+                        <span>6, Obada Ekiti Close, Olaniyi Bus Stop, Abule Egba, Ifako Ijaiye, Lagos State, Nigeria</span>
+                    </div>
+                </div>
+                <a href="https://wa.me/2348051569178" target="_blank" class="whatsapp-button">Message on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/2348051569178" target="_blank" class="whatsapp-float">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16
