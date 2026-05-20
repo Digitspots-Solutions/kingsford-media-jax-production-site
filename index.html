@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kingsford Media & Jax Production - Where Fashion Meets Creative Excellence</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap">
+    <title>Janie Style Microlending Tech - Fast, Simple, Reliable Credit Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --color-primary: #111111;
-            --color-accent: #0151f9;
-            --color-bg: #F5F5F5;
-            --color-text: #080808;
-            --color-surface: #e7e7e7;
-            --color-secondary-accent: #f81e64;
-            --font-display: 'Oswald', sans-serif;
-            --font-body: 'Plus Jakarta Sans', sans-serif;
-            --border-radius: 0px;
+            --primary-color: #07224d;
+            --accent-color: #1f94ee;
+            --bg-color: #EEF4FF;
+            --text-color: #0A2250;
+            --surface-color: #142468;
+            --secondary-accent: #30b87b;
+            --font-display: 'Jost', sans-serif;
+            --font-body: 'Nunito Sans', sans-serif;
+            --border-radius: 16px;
         }
 
         * {
@@ -30,16 +32,35 @@
 
         body {
             font-family: var(--font-body);
-            color: var(--color-text);
-            background-color: var(--color-bg);
-            line-height: 1.6;
-            overflow-x: hidden;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            line-height: 1.7;
         }
 
         h1, h2, h3, h4, h5, h6 {
             font-family: var(--font-display);
             font-weight: 700;
             line-height: 1.2;
+            position: relative;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--accent-color);
+            margin-top: 0.75rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
         }
 
         @keyframes fadeUp {
@@ -53,50 +74,61 @@
             }
         }
 
+        section {
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        section:nth-child(1) { animation-delay: 0s; }
+        section:nth-child(2) { animation-delay: 0.1s; }
+        section:nth-child(3) { animation-delay: 0.2s; }
+        section:nth-child(4) { animation-delay: 0.3s; }
+        section:nth-child(5) { animation-delay: 0.4s; }
+        section:nth-child(6) { animation-delay: 0.5s; }
+        section:nth-child(7) { animation-delay: 0.6s; }
+        section:nth-child(8) { animation-delay: 0.7s; }
+        section:nth-child(9) { animation-delay: 0.8s; }
+
         nav {
             position: sticky;
             top: 0;
-            background: rgba(245, 245, 245, 0.95);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             z-index: 1000;
-            padding: 1.5rem 5%;
-            box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(7, 34, 77, 0.1);
         }
 
-        nav .nav-container {
-            max-width: 1400px;
+        .nav-container {
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        nav .logo {
+        .logo {
             font-family: var(--font-display);
             font-size: 1.5rem;
             font-weight: 700;
-            color: var(--color-primary);
-            text-decoration: none;
+            color: var(--primary-color);
         }
 
-        nav .nav-links {
+        .nav-links {
             display: flex;
             list-style: none;
             gap: 2rem;
         }
 
-        nav .nav-links a {
+        .nav-links a {
             text-decoration: none;
-            color: var(--color-text);
-            font-weight: 500;
-            font-size: 0.95rem;
+            color: var(--text-color);
+            font-weight: 600;
             transition: color 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
 
-        nav .nav-links a:hover {
-            color: var(--color-accent);
+        .nav-links a:hover {
+            color: var(--accent-color);
         }
 
         .mobile-menu-btn {
@@ -109,7 +141,7 @@
         .mobile-menu-btn span {
             width: 25px;
             height: 3px;
-            background: var(--color-text);
+            background: var(--text-color);
             transition: all 0.3s ease;
             transform-origin: center;
         }
@@ -132,8 +164,8 @@
             right: -100%;
             width: 300px;
             height: calc(100vh - 70px);
-            background: var(--color-bg);
-            box-shadow: -4px 4px 0 rgba(0, 0, 0, 0.1);
+            background: var(--bg-color);
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
             transition: right 0.3s ease;
             z-index: 999;
             padding: 2rem;
@@ -153,18 +185,16 @@
 
         .mobile-menu ul a {
             text-decoration: none;
-            color: var(--color-text);
+            color: var(--text-color);
             font-size: 1.1rem;
             font-weight: 500;
             transition: color 0.3s ease;
             display: block;
             padding: 0.5rem 0;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
 
         .mobile-menu ul a:hover {
-            color: var(--color-accent);
+            color: var(--primary-color);
         }
 
         #hero {
@@ -172,370 +202,270 @@
             min-height: 100vh;
             display: flex;
             align-items: center;
-            justify-content: flex-end;
-            padding: 80px 5%;
+            justify-content: center;
+            text-align: center;
+            color: white;
             overflow: hidden;
-            animation: fadeUp 0.6s ease forwards;
         }
 
-        #hero .hero-bg {
+        .hero-bg {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
+            object-fit: cover;
             z-index: 0;
         }
 
-        #hero .hero-bg img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        #hero .hero-overlay {
+        .hero-overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.55);
+            background: rgba(7, 34, 77, 0.65);
             z-index: 1;
         }
 
-        #hero .hero-content {
+        .hero-content {
             position: relative;
             z-index: 2;
-            max-width: 700px;
-            color: #ffffff;
-            text-align: right;
-        }
-
-        #hero h1 {
-            font-size: 4rem;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        #hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2.5rem;
-            line-height: 1.8;
-            font-weight: 300;
-        }
-
-        #hero .cta-button {
-            display: inline-block;
-            padding: 1rem 3rem;
-            background: var(--color-accent);
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            box-shadow: 4px 4px 0 var(--color-secondary-accent);
-        }
-
-        #hero .cta-button:hover {
-            transform: translate(2px, 2px);
-            box-shadow: 2px 2px 0 var(--color-secondary-accent);
-        }
-
-        section {
-            padding: 80px 5%;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        #about {
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.1s;
-        }
-
-        #about .about-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        #about .about-image {
-            position: relative;
-        }
-
-        #about .about-image img {
-            width: 100%;
-            height: 600px;
-            object-fit: cover;
-            box-shadow: 8px 8px 0 var(--color-accent);
-        }
-
-        #about .about-text h2 {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-        }
-
-        #about .about-text p {
-            margin-bottom: 1.5rem;
-            font-size: 1.05rem;
-            line-height: 1.8;
-        }
-
-        #services {
-            background: var(--color-surface);
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.2s;
-        }
-
-        #services h2 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            text-align: center;
-        }
-
-        #services .services-intro {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 3rem;
-            font-size: 1.1rem;
-        }
-
-        #services .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        #services .service-card {
-            background: var(--color-bg);
-            padding: 2rem;
-            box-shadow: 6px 6px 0 var(--color-primary);
-            transition: all 0.3s ease;
-        }
-
-        #services .service-card:hover {
-            transform: translate(3px, 3px);
-            box-shadow: 3px 3px 0 var(--color-primary);
-        }
-
-        #services .service-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--color-accent);
-            text-transform: uppercase;
-        }
-
-        #services .service-card p {
-            font-size: 1rem;
-            line-height: 1.7;
-        }
-
-        #portfolio {
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.3s;
-        }
-
-        #portfolio h2 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-        }
-
-        #portfolio .portfolio-intro {
             max-width: 900px;
-            margin-bottom: 3rem;
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-
-        #portfolio .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        #portfolio .portfolio-item {
-            position: relative;
-            height: 400px;
-            overflow: hidden;
-            box-shadow: 6px 6px 0 var(--color-secondary-accent);
-        }
-
-        #portfolio .portfolio-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        #portfolio .portfolio-item:hover img {
-            transform: scale(1.05);
-        }
-
-        #process {
-            background: var(--color-surface);
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.4s;
-        }
-
-        #process h2 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            text-align: center;
-        }
-
-        #process .process-intro {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 3rem;
-            font-size: 1.1rem;
-        }
-
-        #process .process-steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        #process .process-step {
-            background: var(--color-bg);
             padding: 2rem;
-            box-shadow: 6px 6px 0 var(--color-accent);
         }
 
-        #process .process-step h3 {
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+        }
+
+        .hero-content .tagline {
             font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--color-secondary-accent);
-            text-transform: uppercase;
-        }
-
-        #process .process-step p {
-            font-size: 1rem;
-            line-height: 1.7;
-        }
-
-        #testimonials {
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.5s;
-        }
-
-        #testimonials h2 {
-            font-size: 3rem;
-            margin-bottom: 3rem;
-            text-transform: uppercase;
-            text-align: center;
-        }
-
-        #testimonials .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        #testimonials .testimonial-card {
-            background: var(--color-surface);
-            padding: 2rem;
-            border-left: 6px solid var(--color-accent);
-            position: relative;
-        }
-
-        #testimonials .testimonial-card p {
-            font-size: 1.05rem;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-            font-style: italic;
-        }
-
-        #testimonials .testimonial-card .author {
             font-weight: 600;
-            color: var(--color-accent);
-            font-style: normal;
+            margin-bottom: 1.5rem;
+            color: var(--secondary-accent);
         }
 
-        #contact {
-            background: var(--color-surface);
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.6s;
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
         }
 
-        #contact .contact-container {
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(31, 148, 238, 0.4);
+        }
+
+        .cta-button:hover {
+            background: var(--secondary-accent);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(48, 184, 123, 0.4);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 2rem;
+        }
+
+        .split-section {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             align-items: center;
         }
 
-        #contact .contact-image img {
+        .split-section img {
             width: 100%;
             height: 500px;
             object-fit: cover;
-            box-shadow: 8px 8px 0 var(--color-secondary-accent);
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(7, 34, 77, 0.15);
         }
 
-        #contact h2 {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
+        .grid-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
         }
 
-        #contact p {
-            margin-bottom: 1.5rem;
-            font-size: 1.05rem;
-            line-height: 1.8;
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 15px rgba(7, 34, 77, 0.1);
+            transition: all 0.3s ease;
         }
 
-        #contact .contact-details {
-            margin-top: 2rem;
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(7, 34, 77, 0.15);
         }
 
-        #contact .contact-item {
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .icon-card {
+            text-align: center;
+        }
+
+        .icon-card::before {
+            content: '✓';
+            display: block;
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(135deg, var(--accent-color), var(--secondary-accent));
+            color: white;
+            font-size: 2rem;
+            line-height: 64px;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .step-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 15px rgba(7, 34, 77, 0.1);
+            position: relative;
+            padding-left: 4rem;
+        }
+
+        .step-card::before {
+            content: attr(data-step);
+            position: absolute;
+            left: 1.5rem;
+            top: 1.5rem;
+            width: 40px;
+            height: 40px;
+            background: var(--accent-color);
+            color: white;
+            border-radius: 50%;
             display: flex;
             align-items: center;
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
         }
 
-        #contact .contact-item strong {
-            min-width: 100px;
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--accent-color);
+            box-shadow: 0 4px 15px rgba(7, 34, 77, 0.1);
+        }
+
+        .testimonial-card p:first-child {
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .testimonial-card p:last-child {
             font-weight: 600;
-            color: var(--color-accent);
+            color: var(--primary-color);
         }
 
-        #contact .contact-item a {
-            color: var(--color-text);
+        .faq-container {
+            max-width: 800px;
+            margin: 3rem auto 0;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 15px rgba(7, 34, 77, 0.1);
+        }
+
+        .faq-item h3 {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        #contact {
+            background: linear-gradient(135deg, var(--primary-color), var(--surface-color));
+            color: white;
+        }
+
+        #contact h2::after {
+            background: var(--secondary-accent);
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .contact-item strong {
+            min-width: 80px;
+            color: var(--secondary-accent);
+        }
+
+        .contact-item a {
+            color: white;
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
-        #contact .contact-item a:hover {
-            color: var(--color-accent);
+        .contact-item a:hover {
+            color: var(--secondary-accent);
         }
 
-        #contact .whatsapp-button {
+        .whatsapp-btn {
             display: inline-block;
-            margin-top: 2rem;
-            padding: 1rem 2.5rem;
+            padding: 1rem 2rem;
             background: #25D366;
-            color: #ffffff;
+            color: white;
             text-decoration: none;
+            border-radius: var(--border-radius);
             font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 4px 4px 0 var(--color-primary);
+            margin-top: 1rem;
             transition: all 0.3s ease;
         }
 
-        #contact .whatsapp-button:hover {
-            transform: translate(2px, 2px);
-            box-shadow: 2px 2px 0 var(--color-primary);
+        .whatsapp-btn:hover {
+            background: #20b858;
+            transform: translateY(-2px);
         }
 
         .whatsapp-float {
@@ -545,120 +475,97 @@
             width: 60px;
             height: 60px;
             background: #25D366;
+            color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 4px 4px 0 var(--color-primary);
-            z-index: 1000;
-            transition: all 0.3s ease;
+            font-size: 2rem;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            z-index: 999;
             text-decoration: none;
+            transition: all 0.3s ease;
         }
 
         .whatsapp-float:hover {
             transform: scale(1.1);
-        }
-
-        .whatsapp-float svg {
-            width: 32px;
-            height: 32px;
-            fill: #ffffff;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
         }
 
         footer {
-            background: var(--color-primary);
-            color: #ffffff;
+            background: var(--primary-color);
+            color: white;
             text-align: center;
-            padding: 2rem 5%;
-            font-size: 0.95rem;
-        }
-
-        @media (max-width: 1024px) {
-            section {
-                padding: 60px 5%;
-            }
-
-            #hero h1 {
-                font-size: 3rem;
-            }
-
-            #about .about-container,
-            #contact .contact-container {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-            }
-
-            #about .about-text h2,
-            #contact h2,
-            #services h2,
-            #portfolio h2,
-            #process h2,
-            #testimonials h2 {
-                font-size: 2.5rem;
-            }
+            padding: 2rem;
         }
 
         @media (max-width: 768px) {
-            nav .nav-links {
+            .nav-links {
                 display: none;
             }
-
+            
             .mobile-menu-btn {
                 display: flex;
             }
 
-            section {
-                padding: 48px 5%;
-            }
-
-            #hero {
-                padding: 48px 5%;
-                justify-content: center;
-            }
-
-            #hero .hero-content {
-                text-align: center;
-            }
-
-            #hero h1 {
-                font-size: 2.5rem;
-            }
-
-            #hero p {
-                font-size: 1rem;
-            }
-
-            #about .about-text h2,
-            #contact h2,
-            #services h2,
-            #portfolio h2,
-            #process h2,
-            #testimonials h2 {
+            .hero-content h1 {
                 font-size: 2rem;
             }
 
-            #about .about-image img,
-            #contact .contact-image img {
-                height: 400px;
+            .hero-content .tagline {
+                font-size: 1.2rem;
             }
 
-            #services .services-grid,
-            #process .process-steps,
-            #testimonials .testimonials-grid,
-            #portfolio .portfolio-grid {
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 48px 1.5rem;
+            }
+
+            .split-section {
                 grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .split-section img {
+                height: 300px;
+            }
+
+            .grid-section {
+                grid-template-columns: 1fr;
+            }
+
+            .steps-container {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
             }
 
             .whatsapp-float {
                 width: 50px;
                 height: 50px;
+                font-size: 1.5rem;
                 bottom: 20px;
                 right: 20px;
             }
+        }
 
-            .whatsapp-float svg {
-                width: 26px;
-                height: 26px;
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .container {
+                padding: 60px 2rem;
+            }
+
+            .grid-section {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
@@ -666,14 +573,15 @@
 <body>
     <nav>
         <div class="nav-container">
-            <a href="#hero" class="logo">KINGSFORD MEDIA</a>
+            <div class="logo">Janie Style</div>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#process">Process</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#why-choose-us">Why Choose Us</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-menu-btn">
@@ -682,169 +590,218 @@
                 <span></span>
             </div>
         </div>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#why-choose-us">Why Choose Us</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <div class="mobile-menu">
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#process">Process</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-
     <section id="hero">
-        <div class="hero-bg">
-            <img src="https://images.pexels.com/photos/33676561/pexels-photo-33676561.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Fashion Excellence">
-        </div>
+        <img src="https://images.pexels.com/photos/2327283/pexels-photo-2327283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Hero" class="hero-bg">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Transform Your Vision Into Reality</h1>
-            <p>Welcome to Kingsford Media & Jax Production, Lagos's premier destination for fashion and creative design excellence. We bring your boldest ideas to life with cutting-edge creativity and impeccable craftsmanship.</p>
-            <a href="#contact" class="cta-button">Get Started</a>
+            <h1>Janie Style Microlending Tech</h1>
+            <p class="tagline">Fast, Simple, Reliable Credit Solutions</p>
+            <p>Access Instant Credit When You Need It Most. Janie Style Microlending Tech provides quick, transparent microloans to individuals and small businesses across Nigeria. Get approved in minutes, receive funds instantly, and grow with confidence.</p>
+            <a href="#contact" class="cta-button">Get Started Today</a>
         </div>
     </section>
 
     <section id="about">
-        <div class="about-container">
-            <div class="about-image">
-                <img src="https://images.pexels.com/photos/7383647/pexels-photo-7383647.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="About Kingsford Media">
-            </div>
-            <div class="about-text">
-                <h2>Your Creative Partners in Fashion Excellence</h2>
-                <p>At Kingsford Media & Jax Production, we are a dynamic creative studio based in the heart of Ifako Ijaiye, Lagos. We specialize in delivering exceptional fashion design and creative production services that elevate brands and bring artistic visions to life.</p>
-                <p>Our team combines technical expertise with artistic innovation to produce stunning fashion collections, creative campaigns, and design solutions tailored to the unique needs of our clients. From concept development to final execution, we handle every detail with precision and passion.</p>
-                <p>Whether you're an emerging fashion brand, an established business looking to refresh your image, or an individual seeking bespoke creative services, we have the skills and experience to exceed your expectations.</p>
+        <div class="container">
+            <div class="split-section">
+                <img src="https://images.pexels.com/photos/29997399/pexels-photo-29997399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="About Us">
+                <div>
+                    <h2>About Us</h2>
+                    <p>Janie Style Instant Credit Limited is a forward-thinking neobank dedicated to democratizing access to credit for everyday Nigerians. Founded with a vision to eliminate financial barriers, we leverage cutting-edge technology to deliver microloans that empower individuals and SMEs to achieve their goals. Whether you need funds for business expansion, emergency expenses, or personal projects, we provide fast, hassle-free credit solutions with transparent terms. Our platform is built on trust, speed, and reliability—making financial inclusion a reality for millions across Nigeria.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="services">
-        <h2>Our Services</h2>
-        <p class="services-intro">Comprehensive Fashion & Creative Solutions</p>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Fashion Design & Production</h3>
-                <p>Custom clothing design and manufacturing, from concept sketches to finished garments. We create unique pieces that reflect your personal style or brand identity, using premium fabrics and expert tailoring.</p>
-            </div>
-            <div class="service-card">
-                <h3>Creative Direction & Styling</h3>
-                <p>Professional styling services for photoshoots, fashion shows, music videos, and brand campaigns. Our creative directors ensure every visual element tells your story perfectly.</p>
-            </div>
-            <div class="service-card">
-                <h3>Brand Development & Identity</h3>
-                <p>Complete brand design services including logo creation, visual identity systems, and brand guidelines. We help fashion businesses establish a strong, memorable presence in the market.</p>
-            </div>
-            <div class="service-card">
-                <h3>Fashion Photography & Videography</h3>
-                <p>High-quality production services for lookbooks, campaigns, and promotional content. Our team captures your designs in the most compelling way possible.</p>
-            </div>
-            <div class="service-card">
-                <h3>Event Production</h3>
-                <p>Full-service production for fashion shows, product launches, and creative events. From concept to execution, we manage every detail to create unforgettable experiences.</p>
-            </div>
-            <div class="service-card">
-                <h3>Custom Garment Manufacturing</h3>
-                <p>Small to medium batch production of custom clothing lines. We work with businesses and individuals to bring clothing collections to market with professional quality and attention to detail.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <h2>Our Work</h2>
-        <p class="portfolio-intro">A Showcase of Creative Excellence</p>
-        <p class="portfolio-intro">Explore our portfolio of fashion designs, creative campaigns, and production projects. Each piece represents our commitment to quality, innovation, and the celebration of African creativity. From contemporary streetwear to elegant traditional-meets-modern designs, our work speaks to the diversity and vibrancy of Nigerian fashion.</p>
-        <p class="portfolio-intro">We've partnered with emerging designers, established brands, musicians, and individual clients to create stunning visual content and wearable art that makes an impact.</p>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="https://images.pexels.com/photos/9853298/pexels-photo-9853298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Portfolio Item">
-            </div>
-            <div class="portfolio-item">
-                <img src="https://images.pexels.com/photos/3816395/pexels-photo-3816395.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Portfolio Item">
-            </div>
-            <div class="portfolio-item">
-                <img src="https://images.pexels.com/photos/7947648/pexels-photo-7947648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Portfolio Item">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="grid-section">
+                <div class="card">
+                    <h3>Personal Microloans</h3>
+                    <p>Quick access to funds for personal needs—medical bills, school fees, rent, or emergencies. Loan amounts from ₦5,000 to ₦500,000 with flexible repayment terms.</p>
+                </div>
+                <div class="card">
+                    <h3>Business Microloans</h3>
+                    <p>Fuel your business growth with working capital loans designed for SMEs. From ₦10,000 to ₦1,000,000, with competitive interest rates and tailored repayment plans.</p>
+                </div>
+                <div class="card">
+                    <h3>Instant Approval</h3>
+                    <p>Our automated credit assessment system delivers loan decisions in minutes. No endless paperwork, no long waits.</p>
+                </div>
+                <div class="card">
+                    <h3>Flexible Repayment</h3>
+                    <p>Choose repayment terms that work for you—weekly, bi-weekly, or monthly options available.</p>
+                </div>
+                <div class="card">
+                    <h3>Secure Platform</h3>
+                    <p>Bank-grade security protects your data and transactions. Your financial information is safe with us.</p>
+                </div>
+                <div class="card">
+                    <h3>24/7 Access</h3>
+                    <p>Apply anytime, anywhere through our mobile app or website. Customer support available round the clock.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="process">
-        <h2>How We Work</h2>
-        <p class="process-intro">Your Journey From Concept to Creation</p>
-        <div class="process-steps">
-            <div class="process-step">
-                <h3>1. Consultation & Discovery</h3>
-                <p>We begin with an in-depth conversation to understand your vision, needs, and objectives. Whether it's a fashion collection, a creative campaign, or a custom design project, we take time to grasp every detail.</p>
+    <section id="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps-container">
+                <div class="step-card" data-step="1">
+                    <h3>Register</h3>
+                    <p>Create your account in under 2 minutes. Provide basic information and verify your identity using your BVN and valid ID.</p>
+                </div>
+                <div class="step-card" data-step="2">
+                    <h3>Apply</h3>
+                    <p>Select your loan amount and preferred repayment term. Our smart algorithm instantly assesses your eligibility.</p>
+                </div>
+                <div class="step-card" data-step="3">
+                    <h3>Get Approved</h3>
+                    <p>Receive instant approval notification. Review your loan terms, interest rate, and repayment schedule.</p>
+                </div>
+                <div class="step-card" data-step="4">
+                    <h3>Receive Funds</h3>
+                    <p>Once you accept the offer, funds are disbursed directly to your bank account or mobile wallet within minutes.</p>
+                </div>
+                <div class="step-card" data-step="5">
+                    <h3>Repay with Ease</h3>
+                    <p>Make repayments through automated deductions, bank transfer, or card payment. Track your loan status on our platform.</p>
+                </div>
             </div>
-            <div class="process-step">
-                <h3>2. Concept Development</h3>
-                <p>Our creative team develops initial concepts, mood boards, and design proposals tailored to your brief. We present multiple directions and refine based on your feedback.</p>
-            </div>
-            <div class="process-step">
-                <h3>3. Design & Production</h3>
-                <p>Once the concept is approved, we move into full production mode. Our skilled designers and craftspeople bring the vision to life with meticulous attention to quality and detail.</p>
-            </div>
-            <div class="process-step">
-                <h3>4. Review & Refinement</h3>
-                <p>We present the work for your review and make any necessary adjustments. Your satisfaction is our priority, and we ensure every element meets your standards.</p>
-            </div>
-            <div class="process-step">
-                <h3>5. Final Delivery</h3>
-                <p>Your completed project is delivered on time and ready to make an impact. We provide ongoing support and are always available for future collaborations.</p>
+        </div>
+    </section>
+
+    <section id="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Janie Style</h2>
+            <div class="grid-section">
+                <div class="card icon-card">
+                    <h3>Lightning-Fast Processing</h3>
+                    <p>From application to disbursement in minutes, not days. We value your time.</p>
+                </div>
+                <div class="card icon-card">
+                    <h3>No Hidden Fees</h3>
+                    <p>Transparent pricing with clear interest rates and repayment terms. What you see is what you pay.</p>
+                </div>
+                <div class="card icon-card">
+                    <h3>Build Your Credit Score</h3>
+                    <p>Timely repayments help improve your credit profile, giving you access to larger loans in the future.</p>
+                </div>
+                <div class="card icon-card">
+                    <h3>Nigerian-Focused</h3>
+                    <p>We understand the unique financial challenges facing Nigerians. Our solutions are designed specifically for the Nigerian market.</p>
+                </div>
+                <div class="card icon-card">
+                    <h3>Technology-Driven</h3>
+                    <p>State-of-the-art fintech platform ensures seamless user experience, robust security, and reliable service.</p>
+                </div>
+                <div class="card icon-card">
+                    <h3>Growing Network</h3>
+                    <p>Join thousands of satisfied customers who have achieved their financial goals with Janie Style.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="testimonials">
-        <h2>Client Testimonials</h2>
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <p>"Working with Kingsford Media & Jax Production transformed our brand completely. Their creative vision and attention to detail exceeded our expectations. They truly understand the Nigerian fashion landscape."</p>
-                <p class="author">- Adaeze O., Fashion Entrepreneur</p>
+        <div class="container">
+            <h2>Customer Testimonials</h2>
+            <div class="grid-section">
+                <div class="testimonial-card">
+                    <p>"Janie Style saved my business during a cash crunch. I got ₦200,000 in less than 10 minutes. The process was so smooth, I couldn't believe it!"</p>
+                    <p>- Chioma A., Small Business Owner, Lagos</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"As a salary earner, I needed urgent funds for my daughter's school fees. Janie Style came through for me same day. No stress, no wahala. Highly recommended!"</p>
+                    <p>- Emeka O., Civil Servant, Abuja</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"I was skeptical about online loans, but Janie Style proved me wrong. Transparent terms, fair rates, and excellent customer service. They've earned my trust."</p>
+                    <p>- Blessing U., Entrepreneur, Port Harcourt</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The repayment flexibility made all the difference for me. I could choose a plan that matched my income flow. This is what Nigerian fintech should be like."</p>
+                    <p>- Tunde K., Trader, Ibadan</p>
+                </div>
             </div>
-            <div class="testimonial-card">
-                <p>"Professional, creative, and reliable. They brought our fashion show concept to life flawlessly. The team's dedication to excellence is evident in every project."</p>
-                <p class="author">- Tunde A., Event Organizer</p>
-            </div>
-            <div class="testimonial-card">
-                <p>"From the first consultation to final delivery, the experience was seamless. They created custom designs that perfectly captured my personal style while remaining uniquely Nigerian."</p>
-                <p class="author">- Blessing M., Private Client</p>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>What documents do I need to apply?</h3>
+                    <p>You need a valid government-issued ID (Driver's License, National ID, Voter's Card, or International Passport), your BVN, and an active bank account.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How long does approval take?</h3>
+                    <p>Most applications are processed and approved within 5-10 minutes. Complex cases may take up to 24 hours.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What are the interest rates?</h3>
+                    <p>Our interest rates range from 5% to 15% per month depending on loan amount, tenure, and your credit profile. All rates are clearly displayed before you accept any loan.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I repay my loan early?</h3>
+                    <p>Yes! Early repayment is encouraged and there are no prepayment penalties. You may even qualify for reduced interest.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What if I can't repay on time?</h3>
+                    <p>Contact our customer support immediately. We offer flexible restructuring options to help you manage your repayment without penalties when possible.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is my information secure?</h3>
+                    <p>Absolutely. We use bank-grade encryption and comply with CBN regulations and data protection standards to keep your information safe.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What is the maximum loan amount?</h3>
+                    <p>Personal loans go up to ₦500,000. Business loans can reach ₦1,000,000. Your eligibility depends on your credit assessment.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do I need collateral?</h3>
+                    <p>No. Our microloans are unsecured. We use advanced credit scoring technology instead of requiring physical collateral.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <div class="contact-container">
-            <div class="contact-image">
-                <img src="https://images.pexels.com/photos/19893586/pexels-photo-19893586.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Contact Us">
-            </div>
-            <div class="contact-text">
-                <h2>Let's Create Something Amazing Together</h2>
-                <p>Ready to bring your fashion and creative vision to life? We're here to help. Whether you have a specific project in mind or just want to explore possibilities, reach out to us today.</p>
-                <p>Visit our studio in Ifako Ijaiye or connect with us via phone or WhatsApp. We're excited to hear about your ideas and show you how Kingsford Media & Jax Production can elevate your creative projects.</p>
-                <p>Consultations are available by appointment. Contact us now to schedule your session and take the first step toward exceptional fashion and creative excellence.</p>
-                <div class="contact-details">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div>
+                    <p>Ready to take control of your financial future? Get in touch with Janie Style Microlending Tech today.</p>
+                    <p>Our dedicated customer support team is available 24/7 to answer your questions, guide you through the application process, or address any concerns.</p>
+                    <p>Visit our office, give us a call, or reach out via WhatsApp for instant assistance. We're committed to providing you with the best microlending experience in Nigeria.</p>
+                    <a href="https://wa.me/2348051569178" class="whatsapp-btn" target="_blank">Chat on WhatsApp</a>
+                </div>
+                <div class="contact-info">
                     <div class="contact-item">
                         <strong>Phone:</strong>
-                        <a href="tel:+2348051569178">08051569178</a>
+                        <a href="tel:08051569178">08051569178</a>
                     </div>
                     <div class="contact-item">
                         <strong>Email:</strong>
-                        <a href="mailto:info@kingsfordmedia.ng">info@kingsfordmedia.ng</a>
+                        <a href="mailto:info@janiestyle.com">info@janiestyle.com</a>
                     </div>
                     <div class="contact-item">
                         <strong>Address:</strong>
-                        <span>6, Obada Ekiti Close, Olaniyi Bus Stop, Abule Egba, Ifako Ijaiye, Lagos State, Nigeria</span>
-                    </div>
-                </div>
-                <a href="https://wa.me/2348051569178" target="_blank" class="whatsapp-button">Message on WhatsApp</a>
-            </div>
-        </div>
-    </section>
-
-    <a href="https://wa.me/2348051569178" target="_blank" class="whatsapp-float">
-        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16
+                        <span>6, Obada Ekiti Close, Olaniyi Bus Stop, Abule Egba, If
