@@ -1,62 +1,69 @@
 {
-  "businessName": "Kingsford Media & Jax Production",
-  "industry": "Fashion and Creative Design",
-  "tone": "creative, stylish, professional",
-  "tagline": "Where Fashion Meets Creative Excellence",
+  "businessName": "Janie Style Microlending Tech",
+  "industry": "Fintech",
+  "tone": "professional",
+  "tagline": "Fast, Simple, Reliable Credit Solutions",
   "sections": [
     {
       "id": "hero",
       "name": "Hero",
-      "copy": "Transform Your Vision Into Reality\n\nWelcome to Kingsford Media & Jax Production, Lagos's premier destination for fashion and creative design excellence. We bring your boldest ideas to life with cutting-edge creativity and impeccable craftsmanship.",
-      "imagePrompt": "High-end fashion photoshoot in a modern Lagos creative studio, beautiful Nigerian models wearing vibrant contemporary African fashion designs, professional lighting equipment visible, stylish industrial backdrop with warm golden hour lighting streaming through large windows, ultra-realistic, commercial photography quality",
+      "copy": "Access Instant Credit When You Need It Most. Janie Style Microlending Tech provides quick, transparent microloans to individuals and small businesses across Nigeria. Get approved in minutes, receive funds instantly, and grow with confidence.",
+      "imagePrompt": "Modern Nigerian fintech office with young professionals using smartphones and tablets, bright natural lighting, Lagos cityscape visible through large windows, contemporary minimalist design with blue and white color scheme, photorealistic, high quality",
       "layout": "centered"
     },
     {
       "id": "about",
       "name": "About Us",
-      "copy": "Your Creative Partners in Fashion Excellence\n\nAt Kingsford Media & Jax Production, we are a dynamic creative studio based in the heart of Ifako Ijaiye, Lagos. We specialize in delivering exceptional fashion design and creative production services that elevate brands and bring artistic visions to life.\n\nOur team combines technical expertise with artistic innovation to produce stunning fashion collections, creative campaigns, and design solutions tailored to the unique needs of our clients. From concept development to final execution, we handle every detail with precision and passion.\n\nWhether you're an emerging fashion brand, an established business looking to refresh your image, or an individual seeking bespoke creative services, we have the skills and experience to exceed your expectations.",
-      "imagePrompt": "Modern creative studio workspace in Lagos, diverse team of Nigerian fashion designers and creatives collaborating around a large table with fabric swatches, sketches, and mood boards, bright natural lighting, colorful African prints visible, professional yet warm atmosphere, photorealistic detail",
+      "copy": "Janie Style Instant Credit Limited is a forward-thinking neobank dedicated to democratizing access to credit for everyday Nigerians. Founded with a vision to eliminate financial barriers, we leverage cutting-edge technology to deliver microloans that empower individuals and SMEs to achieve their goals. Whether you need funds for business expansion, emergency expenses, or personal projects, we provide fast, hassle-free credit solutions with transparent terms. Our platform is built on trust, speed, and reliability—making financial inclusion a reality for millions across Nigeria.",
+      "imagePrompt": "Diverse group of Nigerian entrepreneurs and professionals in a modern co-working space, smiling and collaborating, laptops and mobile devices on tables, warm natural lighting, professional yet approachable atmosphere, Lagos business district background, photorealistic",
       "layout": "split"
     },
     {
       "id": "services",
       "name": "Our Services",
-      "copy": "Comprehensive Fashion & Creative Solutions\n\nFashion Design & Production\nCustom clothing design and manufacturing, from concept sketches to finished garments. We create unique pieces that reflect your personal style or brand identity, using premium fabrics and expert tailoring.\n\nCreative Direction & Styling\nProfessional styling services for photoshoots, fashion shows, music videos, and brand campaigns. Our creative directors ensure every visual element tells your story perfectly.\n\nBrand Development & Identity\nComplete brand design services including logo creation, visual identity systems, and brand guidelines. We help fashion businesses establish a strong, memorable presence in the market.\n\nFashion Photography & Videography\nHigh-quality production services for lookbooks, campaigns, and promotional content. Our team captures your designs in the most compelling way possible.\n\nEvent Production\nFull-service production for fashion shows, product launches, and creative events. From concept to execution, we manage every detail to create unforgettable experiences.\n\nCustom Garment Manufacturing\nSmall to medium batch production of custom clothing lines. We work with businesses and individuals to bring clothing collections to market with professional quality and attention to detail.",
-      "imagePrompt": "Grid collage showing various fashion and creative services: fashion designer measuring fabric on a dress form, professional camera setup for fashion photography, models on a Lagos runway, creative team reviewing designs on tablets, vibrant Nigerian fabrics and patterns throughout, modern and colorful, editorial quality photography",
+      "copy": "Personal Microloans: Quick access to funds for personal needs—medical bills, school fees, rent, or emergencies. Loan amounts from ₦5,000 to ₦500,000 with flexible repayment terms.\n\nBusiness Microloans: Fuel your business growth with working capital loans designed for SMEs. From ₦10,000 to ₦1,000,000, with competitive interest rates and tailored repayment plans.\n\nInstant Approval: Our automated credit assessment system delivers loan decisions in minutes. No endless paperwork, no long waits.\n\nFlexible Repayment: Choose repayment terms that work for you—weekly, bi-weekly, or monthly options available.\n\nSecure Platform: Bank-grade security protects your data and transactions. Your financial information is safe with us.\n\n24/7 Access: Apply anytime, anywhere through our mobile app or website. Customer support available round the clock.",
+      "imagePrompt": "Split screen composition showing Nigerian small business owner receiving mobile notification on smartphone on one side, and happy family shopping at local market on the other, vibrant colors, modern fintech UI elements floating, bright daylight, photorealistic commercial photography style",
       "layout": "grid"
     },
     {
-      "id": "portfolio",
-      "name": "Our Work",
-      "copy": "A Showcase of Creative Excellence\n\nExplore our portfolio of fashion designs, creative campaigns, and production projects. Each piece represents our commitment to quality, innovation, and the celebration of African creativity. From contemporary streetwear to elegant traditional-meets-modern designs, our work speaks to the diversity and vibrancy of Nigerian fashion.\n\nWe've partnered with emerging designers, established brands, musicians, and individual clients to create stunning visual content and wearable art that makes an impact.",
-      "imagePrompt": "Professional fashion portfolio spread showing diverse Nigerian fashion designs including contemporary Ankara pieces, modern streetwear, elegant evening wear, creative photoshoot setups, models in various settings around Lagos landmarks, vibrant colors and patterns, magazine-quality photography, high-end fashion editorial style",
-      "layout": "grid"
-    },
-    {
-      "id": "process",
-      "name": "How We Work",
-      "copy": "Your Journey From Concept to Creation\n\n1. Consultation & Discovery\nWe begin with an in-depth conversation to understand your vision, needs, and objectives. Whether it's a fashion collection, a creative campaign, or a custom design project, we take time to grasp every detail.\n\n2. Concept Development\nOur creative team develops initial concepts, mood boards, and design proposals tailored to your brief. We present multiple directions and refine based on your feedback.\n\n3. Design & Production\nOnce the concept is approved, we move into full production mode. Our skilled designers and craftspeople bring the vision to life with meticulous attention to quality and detail.\n\n4. Review & Refinement\nWe present the work for your review and make any necessary adjustments. Your satisfaction is our priority, and we ensure every element meets your standards.\n\n5. Final Delivery\nYour completed project is delivered on time and ready to make an impact. We provide ongoing support and are always available for future collaborations.",
-      "imagePrompt": "Clean infographic-style visualization showing the creative process flow, Nigerian fashion designers at work in various stages: consulting with clients, sketching designs, selecting fabrics, sewing and crafting, photography sessions, modern Lagos studio environment, bright and professional atmosphere, documentary photography style",
+      "id": "how-it-works",
+      "name": "How It Works",
+      "copy": "Step 1 - Register: Create your account in under 2 minutes. Provide basic information and verify your identity using your BVN and valid ID.\n\nStep 2 - Apply: Select your loan amount and preferred repayment term. Our smart algorithm instantly assesses your eligibility.\n\nStep 3 - Get Approved: Receive instant approval notification. Review your loan terms, interest rate, and repayment schedule.\n\nStep 4 - Receive Funds: Once you accept the offer, funds are disbursed directly to your bank account or mobile wallet within minutes.\n\nStep 5 - Repay with Ease: Make repayments through automated deductions, bank transfer, or card payment. Track your loan status on our platform.",
+      "imagePrompt": "Clean infographic-style illustration showing 5 connected steps with Nigerian person using smartphone at each stage, modern flat design with isometric elements, blue and gold color palette, professional business setting, clear progression flow, photorealistic textures",
       "layout": "cards"
+    },
+    {
+      "id": "why-choose-us",
+      "name": "Why Choose Janie Style",
+      "copy": "Lightning-Fast Processing: From application to disbursement in minutes, not days. We value your time.\n\nNo Hidden Fees: Transparent pricing with clear interest rates and repayment terms. What you see is what you pay.\n\nBuild Your Credit Score: Timely repayments help improve your credit profile, giving you access to larger loans in the future.\n\nNigerian-Focused: We understand the unique financial challenges facing Nigerians. Our solutions are designed specifically for the Nigerian market.\n\nTechnology-Driven: State-of-the-art fintech platform ensures seamless user experience, robust security, and reliable service.\n\nGrowing Network: Join thousands of satisfied customers who have achieved their financial goals with Janie Style.",
+      "imagePrompt": "Professional Nigerian businessman and businesswoman shaking hands in modern Lagos office, success and trust conveyed through body language, awards and certifications visible on wall, floor-to-ceiling windows showing Lagos skyline, golden hour lighting, photorealistic corporate photography",
+      "layout": "grid"
     },
     {
       "id": "testimonials",
-      "name": "Client Testimonials",
-      "copy": "What Our Clients Say\n\n\"Working with Kingsford Media & Jax Production transformed our brand completely. Their creative vision and attention to detail exceeded our expectations. They truly understand the Nigerian fashion landscape.\" - Adaeze O., Fashion Entrepreneur\n\n\"Professional, creative, and reliable. They brought our fashion show concept to life flawlessly. The team's dedication to excellence is evident in every project.\" - Tunde A., Event Organizer\n\n\"From the first consultation to final delivery, the experience was seamless. They created custom designs that perfectly captured my personal style while remaining uniquely Nigerian.\" - Blessing M., Private Client",
-      "imagePrompt": "Collage of happy Nigerian clients wearing custom fashion pieces, smiling faces of diverse age groups and styles, fashion show audience applauding, satisfied customers reviewing finished products, warm and authentic moments captured in Lagos settings, candid photography style, genuine emotions",
+      "name": "Customer Testimonials",
+      "copy": "\"Janie Style saved my business during a cash crunch. I got ₦200,000 in less than 10 minutes. The process was so smooth, I couldn't believe it!\" - Chioma A., Small Business Owner, Lagos\n\n\"As a salary earner, I needed urgent funds for my daughter's school fees. Janie Style came through for me same day. No stress, no wahala. Highly recommended!\" - Emeka O., Civil Servant, Abuja\n\n\"I was skeptical about online loans, but Janie Style proved me wrong. Transparent terms, fair rates, and excellent customer service. They've earned my trust.\" - Blessing U., Entrepreneur, Port Harcourt\n\n\"The repayment flexibility made all the difference for me. I could choose a plan that matched my income flow. This is what Nigerian fintech should be like.\" - Tunde K., Trader, Ibadan",
+      "imagePrompt": "Collage of diverse happy Nigerian customers in various professional and casual settings, authentic smiles, holding smartphones showing the Janie Style app, mix of urban and suburban Nigerian backgrounds, natural lighting, genuine testimonial photography style, photorealistic",
       "layout": "cards"
     },
     {
+      "id": "faq",
+      "name": "Frequently Asked Questions",
+      "copy": "What documents do I need to apply?\nYou need a valid government-issued ID (Driver's License, National ID, Voter's Card, or International Passport), your BVN, and an active bank account.\n\nHow long does approval take?\nMost applications are processed and approved within 5-10 minutes. Complex cases may take up to 24 hours.\n\nWhat are the interest rates?\nOur interest rates range from 5% to 15% per month depending on loan amount, tenure, and your credit profile. All rates are clearly displayed before you accept any loan.\n\nCan I repay my loan early?\nYes! Early repayment is encouraged and there are no prepayment penalties. You may even qualify for reduced interest.\n\nWhat if I can't repay on time?\nContact our customer support immediately. We offer flexible restructuring options to help you manage your repayment without penalties when possible.\n\nIs my information secure?\nAbsolutely. We use bank-grade encryption and comply with CBN regulations and data protection standards to keep your information safe.\n\nWhat is the maximum loan amount?\nPersonal loans go up to ₦500,000. Business loans can reach ₦1,000,000. Your eligibility depends on your credit assessment.\n\nDo I need collateral?\nNo. Our microloans are unsecured. We use advanced credit scoring technology instead of requiring physical collateral.",
+      "imagePrompt": "Professional Nigerian customer service representative wearing headset in modern call center, smiling warmly while assisting customer, multiple monitors showing fintech dashboard, bright office environment, colleagues visible in background, warm professional lighting, photorealistic",
+      "layout": "default"
+    },
+    {
       "id": "contact",
-      "name": "Get In Touch",
-      "copy": "Let's Create Something Amazing Together\n\nReady to bring your fashion and creative vision to life? We're here to help. Whether you have a specific project in mind or just want to explore possibilities, reach out to us today.\n\nVisit our studio in Ifako Ijaiye or connect with us via phone or WhatsApp. We're excited to hear about your ideas and show you how Kingsford Media & Jax Production can elevate your creative projects.\n\nConsultations are available by appointment. Contact us now to schedule your session and take the first step toward exceptional fashion and creative excellence.",
-      "imagePrompt": "Welcoming modern creative studio reception area in Lagos, stylish furniture with African design elements, fashion sketches and fabric samples artfully displayed on walls, natural light streaming through windows, professional yet warm atmosphere, inviting space that reflects creativity and style, architectural photography quality",
+      "name": "Contact Us",
+      "copy": "Ready to take control of your financial future? Get in touch with Janie Style Microlending Tech today.\n\nOur dedicated customer support team is available 24/7 to answer your questions, guide you through the application process, or address any concerns.\n\nVisit our office, give us a call, or reach out via WhatsApp for instant assistance. We're committed to providing you with the best microlending experience in Nigeria.",
+      "imagePrompt": "Modern Nigerian fintech office reception area, professional receptionist at sleek desk, Janie Style branding visible, comfortable waiting area with contemporary furniture, large windows with Lagos street view, plants and natural elements, welcoming atmosphere, golden hour lighting, photorealistic architectural photography",
       "layout": "split"
     }
   ],
   "contact": {
     "phone": "08051569178",
-    "email": "info@kingsfordmedia.ng",
+    "email": "info@janiestyle.com",
     "address": "6, Obada Ekiti Close, Olaniyi Bus Stop, Abule Egba, Ifako Ijaiye, Lagos State, Nigeria",
     "whatsapp": "https://wa.me/2348051569178"
   }
